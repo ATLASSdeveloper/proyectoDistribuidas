@@ -1,0 +1,199 @@
+/* Estilos para la prueba */
+.prueba {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #EAF4FF;
+}
+
+/* Inicia header */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container h1 {
+  color: black;
+}
+
+#avion {
+  color: black;
+  font-size: 30px;
+}
+
+.container p {
+  color: black;
+}
+
+.airport-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.airport-header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.airport-header p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.flight-search {
+  margin-top: 20px;
+}
+/* Fin header */
+
+/* Inicia centro */
+.contenedor {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor h2 {
+  text-align: center;
+}
+
+.flight-search {
+  display: flex;
+  align-items: center;
+}
+
+.form-group {
+  margin-right: 20px;
+}
+
+label {
+  margin-right: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+.buscarVuelos {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.buscarVuelos {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buscarVuelos:hover {
+  background-color: #0056b3;
+}
+/* Fin de centro */
+
+/* Estilos para la lista de vuelos */
+.lista-vuelos {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.vuelo {
+  width: calc(30% - 10px);
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.vuelo h3 {
+  margin-top: 0;
+}
+
+/* Estilos para los datos del vuelo */
+.vuelo p {
+  margin: 5px 0;
+}
+
+/* Estilos para columnas */
+@media (max-width: 980px) {
+  .vuelo {
+      width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .vuelo {
+      width: 100%;
+  }
+}
+/* Fin de los vuelos disponibles */
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+      padding: 10px;
+  }
+
+  .container h1 {
+      font-size: 28px;
+  }
+
+  .container p {
+      font-size: 16px;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  .contenedor {
+      width: 90%;
+      padding: 10px;
+  }
+
+  .flight-search {
+      flex-direction: column;
+  }
+
+  .form-group {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
+
+/*             */
+.card:hover {
+  box-shadow: 0 8px 16px rgba(71, 70, 70, 0.979); 
+  transition: box-shadow 0.2s ease;
+}
+
+.card {
+  font-family: 'Roboto', sans-serif;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.yellow-background {
+  background-color: yellow;
+  padding: 5px 5px; 
+  border-radius: 10px; 
+}
+
+.card-text.salida {
+  font-family: 'Arial', sans-serif; 
+  color: #333; 
+  font-size: 16px;
+  font-weight: bold; 
+}

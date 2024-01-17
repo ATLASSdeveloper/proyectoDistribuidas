@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: #EAF4FF
+}
+
+.avion {
+  display: inline-block;
+  margin: 20px;
+}
+
+#avionReserva{
+  font-size: 20px;
+}
+
+.fila {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selecciona{
+  font-size: 20px ;
+}
+
+.asiento, .pasillo,.asientoOcupado{
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.pasillo {
+  width: 20px;
+  background-color: #ddd;
+}
+
+.cabezaReserva{
+  background-color: #007bff;
+ padding: 20px;
+}
+.botonReserva {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botonReserva:hover {
+  background-color: #0056b3;
+}
+
+.asientoSeleccionado {
+  background-color: #4CAF50;
+  color: #fff;
+  border: 2px solid #4CAF50;
+}
+
+.asientoOcupado{
+  background-color: #ee1919;
+  color: #fff;
+  border: 2px solid #ee1919;
+}
+
+.botonReserva[disabled] {
+  cursor: not-allowed;
+  opacity: 0.6; /* opcional: puedes ajustar la opacidad para dar una apariencia visual más desactivada */
+}
+
+
+@media (max-width: 768px) {
+  .avion {
+    margin: 10px; /* Ajustes para tamaños de pantalla más pequeños */
+  }
+
+  #avionReserva {
+    font-size: 20px; /* Ajustes para tamaños de pantalla más pequeños */
+  }
+
+  .asiento, .pasillo,.asientoOcupado {
+    width: 40px; /* Ajustes para tamaños de pantalla más pequeños */
+    height: 40px; /* Ajustes para tamaños de pantalla más pequeños */
+    margin: 5px; /* Ajustes para tamaños de pantalla más pequeños */
+  }
+
+  .pasillo {
+    width: 20px; /* Ajustes para tamaños de pantalla más pequeños */
+  }
+
+  .cabezaReserva {
+    padding: 20px; /* Vuelve al tamaño original en pantallas más pequeñas */
+  }
+}

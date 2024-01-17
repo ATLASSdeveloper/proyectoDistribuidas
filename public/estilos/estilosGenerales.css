@@ -1,0 +1,17 @@
+.etiqueta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #34b1db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.etiqueta:hover {
+    background-color: #2980b9;
+}
+
+h1{
+    color: whitesmoke !important; 
+}
